@@ -192,12 +192,17 @@ footer {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .chart-bg {
-        position: relative;
-        width: 100%;
-        margin-top: -80px;
-    }
+@media only screen and (max-width: 700px) {
+    .rotate-text {
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        }
+    
+      .ministry-stat p {
+          font-size: .4em;
+      }
 }
 
 @media only screen and (min-width: 768px) {
