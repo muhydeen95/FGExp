@@ -35,13 +35,12 @@ nav {
     font-weight: normal;
 }
 
-.expense-tab:first-child,
-.tabs-button:first-child {
+.expense-tab:first-child {
     color: #00945E;
     border-bottom: 2px solid #00945E;
 }
 
-.expense-tab, .tabs-button {
+.expense-tab{
     color: #A1A3A8;
     border-bottom: 2px solid #A1A3A8;
 }
@@ -65,10 +64,6 @@ nav {
     border-radius: 5px;
 }
 
-.chart-wrapper {
-    height: 50vh;
-}
-
 /* **************** tab style ****************** */
 
 .tab-sidebar{
@@ -77,14 +72,12 @@ nav {
 }
 
 .tabs-button{
-    padding: 10px;
-    border: none;
-    width: 100%;
+    color: #A1A3A8;
+    border-bottom: 2px solid #A1A3A8;
     outline: none;
     cursor: pointer;
     font-size: 1em;
     background-color: transparent;
-    color: var(--mainGreen);
 }
 
 .tabs-button:active{
@@ -93,7 +86,8 @@ nav {
 
 .tabs-button--active{
     font-weight: bold;
-    border-bottom: 2px solid var(--mainGreen);
+    color: #00945E;
+    border-bottom: 2px solid #00945E;
 }
 
 .tabs-content{
@@ -120,6 +114,11 @@ nav {
 }
 
 /* **************** tab style ****************** */
+
+
+.chart-wrapper {
+    height: 50vh;
+}
 
 .chart {
     position: relative;
@@ -242,3 +241,23 @@ footer {
         margin-top: -80px;
     }
 }
+
+
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
