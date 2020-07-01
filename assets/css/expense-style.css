@@ -35,16 +35,6 @@ nav {
     font-weight: normal;
 }
 
-.expense-tab:first-child {
-    color: #00945E;
-    border-bottom: 2px solid #00945E;
-}
-
-.expense-tab{
-    color: #A1A3A8;
-    border-bottom: 2px solid #A1A3A8;
-}
-
 .sector-btn {
     color: #00945E;
     font-size: 1.2em;
@@ -104,75 +94,43 @@ nav {
     margin-top: 0;
 }
 
-.welcome-massage{
-    text-align: center;
-    color: var(--mainGreen);
-}
-
-#intro-type{
-    font-weight: bold;
-}
+/* *************** Graph *************** */
+div.graph-cont{
+    position: relative;
+   
+ }
+ div.graph-cont img{
+     width: 100%;
+     padding: 0 0 0 10px;
+ }
+ 
+ .graph-border {
+     border-bottom: 2px solid black;
+     border-left: 2px solid black;
+ }
+ 
+ div.graph-cont img:nth-child(1){
+     position: absolute;
+ }
+ 
+ .ministry-stat{
+     padding: 1.5rem;
+     min-height: 350px;
+ }
+ 
+ .ministry-stat p {
+     font-size: .7em;
+ }
+ 
+ .rotate-text {
+     transform: rotate(-90deg);
+     position: absolute;
+     top: 120px;
+     left: 0;
+ }
+/* *************** Graph *************** */
 
 /* **************** tab style ****************** */
-
-
-.chart-wrapper {
-    height: 50vh;
-}
-
-.chart {
-    position: relative;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.chart-bg {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-}
-
-.chart-indicator {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 25px;
-}
-
-.chart-stop{
-    position: absolute;
-    top: 18px;
-    width: 5%;
-    right: 22px;
-}
-
-.y-axis {
-    position: absolute;
-    transform: rotate(-90deg);
-    margin-left: -140px;
-    top: 150px;
-}
-
-.x-axis {
-    position: absolute;
-    margin-bottom: -70px;
-}
-
-.chart-list {
-    position: absolute;
-    list-style-type: none;
-    margin-left: -35px;
-    top: 0px;
-}
-
-.chart-2 {
-    height: 50vh;
-}
-
-.chart-2 img {
-    width: 100%;
-}
 
 footer {
     background: #323E48;
@@ -242,22 +200,15 @@ footer {
     }
 }
 
-
-
-input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: none;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 5px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+@media only screen and (min-width: 768px) {
+  
+    .exp-card{
+        width: 44%;
+    }
   }
   
-  input[type=text]:focus {
-    width: 100%;
+  @media only screen and (min-width: 910px) {
+      .ministry-stat{
+          flex-direction: row;
+      }
   }
