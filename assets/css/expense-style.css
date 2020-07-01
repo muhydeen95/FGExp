@@ -174,10 +174,6 @@ footer {
         font-size: 1em;
     }
 
-    .expense-tab {
-        font-size: .6em;
-    }
-
     .date {
         font-size: .75em;
     }
@@ -198,17 +194,27 @@ footer {
         position: absolute;
         top: 60px;
         left: 0;
-        }
+    }
     
-      .ministry-stat p {
+    .ministry-stat p {
           font-size: .4em;
-      }
+    }
+
+    .ministry-stat{
+        padding: 1.5rem;
+        min-height: 150px;
+    }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   
     .exp-card{
         width: 44%;
+    }
+
+    .rotate-text {
+        margin-left: -30px;
+        top: 100px;
     }
   }
   
@@ -216,4 +222,9 @@ footer {
       .ministry-stat{
           flex-direction: row;
       }
+
+      .rotate-text {
+        margin-left: -30px;
+        top: 150px;
+    }
   }
